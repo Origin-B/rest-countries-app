@@ -1,0 +1,48 @@
+@import "tailwindcss";
+
+/* 
+- Blue 900 (Dark Mode Elements): hsl(209, 23%, 22%)
+- Blue 950 (Dark Mode Background): hsl(207, 26%, 17%)
+- Grey 950 (Light Mode Text): hsl(200, 15%, 8%)
+- Grey 400 (Light Mode shadow): hsl(0, 0%, 50%)
+- Grey 50 (Light Mode Background): hsl(0, 0%, 99%)
+- White (Dark Mode Text & Light Mode Elements): hsl(0, 100%, 100%)
+*/
+
+@theme {
+  --color-text: var(--text);
+  --color-text-muted: var(--text-muted);
+  --color-bg: var(--bg);
+  --color-icon: var(--icon);
+  --color-shadow: var(--shadow);
+  --font-Nunito-Sans: "Nunito Sans", sans-serif;
+  --text-h: 14px;
+  --text-d: 16px;
+}
+
+:root,
+.light {
+  --text: hsl(200, 15%, 8%);
+  --bg: hsl(0, 0%, 99%);
+  --icon: hsl(0, 100%, 100%);
+  --shadow: hsl(0, 0%, 50%);
+}
+
+.dark {
+  --text: hsl(0, 100%, 100%);
+  --bg: hsl(207, 26%, 17%);
+  --icon: hsl(209, 23%, 22%);
+  --shadow: hsl(0, 0%, 50%);
+}
+
+h1 {
+  font-size: clamp(0.8rem, 0.8rem + 0.25vw, 3rem);
+}
+
+h2 {
+  font-size: clamp(2rem, 2rem + 0.17vw, 3.5rem);
+}
+
+h3 {
+  font-size: clamp(1rem, 1rem + 0.11vw, 2.5rem);
+}
