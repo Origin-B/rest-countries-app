@@ -20,9 +20,7 @@ export default function Filter({
   const [active, setActive] = useState(false);
 
   function handelFilter(id: string, value: string): void {
-    setFilter((prev: FilterT) => {
-      return { ...prev, [id]: value };
-    });
+    setFilter({ ...filter, [id]: value });
   }
 
   return (

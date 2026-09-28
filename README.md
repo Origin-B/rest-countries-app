@@ -2,7 +2,7 @@
 
 A countries explorer built as a [Frontend Mentor](https://www.frontendmentor.io/) challenge. Browse every country, search by name, filter by region, and open a details page for each one. Fully responsive, with a persistent light/dark theme.
 
-**Live demo:** _add link_
+**Live demo:** https://candid-kitten-79407e.netlify.app
 
 ## Screenshots
 
